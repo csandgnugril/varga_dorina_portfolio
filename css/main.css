@@ -1,0 +1,174 @@
+body{
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+}
+/*--Általános--*/
+a{
+	text-decoration: none;
+	color: white;
+	 
+}
+
+
+/*--általános vége--*/
+
+
+/*--layout--*/
+body{
+	display: grid;
+	grid-template-areas: 
+	"fejlec"
+	"kontent"
+	"lablec";
+	grid-template-rows: max-content 1fr max-content;
+	min-height: 100vh;
+
+
+}
+header{
+	padding-top: 0.5rem;
+	color: white;
+	background-color: rgb(91,22,22);
+	grid-area: fejlec;
+
+
+}
+main{
+	color: black;
+	background-color: rgb(230,204,191);
+	grid-area: kontent;
+	padding-bottom: 50px;
+}
+footer{
+	color: white;
+	background-color: rgb(91,22,22);
+	grid-area: lablec;
+	line-height: 2rem;
+	padding-left: 100px;
+
+}
+/*--layout_end--*/
+
+
+/*--azonos header--*/
+	header{
+		line-height: 4rem;
+		font-size: 1.15rem;
+		text-align: right;
+		padding: 1.75 2.5rem;
+
+
+
+	}
+	header .header_menu{
+		margin:   2rem;
+	}
+	header .header_menu:hover{
+		text-decoration: underline overline;
+	}
+
+
+/*-- header vége--*/
+
+
+/*-- main--*/
+
+	
+
+	#Nev{
+		padding-top: 100px;
+		text-transform: uppercase;
+		font-size: 40px;
+		text-align: center;
+	}
+	#Titulus{
+		font-size: 25px;
+		text-align: center;
+		padding-bottom: 40px;
+	}
+	#Idezet{
+		font-size: 14px;
+		text-align: center;
+		padding-bottom: 40px;
+		padding-top: 40px;
+	}
+
+
+
+	#Cim{
+		font-size: 30px;
+		text-align: center;
+		/*padding-left:  20px;*/
+		padding-top: 30px;
+	}
+	#Alcim{
+		padding-left: 40px;
+		font-size: 20px;
+		line-height: 2rem;
+	}
+	#Egyseg{
+		padding-left: 150px;
+		margin: .5rem;
+	}
+
+
+	.Tablazat{
+		margin-left: auto;
+  		margin-right: auto;
+  		padding-top: 50px;
+  		padding-left: 50px;
+  		padding-right: 50px;
+	}
+
+
+
+	
+
+
+/*--main vége--*/
+
+
+/*--azonos footer--*/
+footer{
+	padding-bottom: 30px;
+
+}
+#fKapcsolat{
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+#fElerhetoseg{
+	padding-left: 150px;
+}
+.link{
+	text-decoration: underline overline;
+}
+/*--azonos footer vége--*/
+
+/*--kep_racs--*/
+.kep1 img{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 15rem;
+
+}
+
+.kep2 img{
+	object-fit: contain;
+}
+
+
+
+/*--kep_racs vege--*/
